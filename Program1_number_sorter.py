@@ -9,18 +9,6 @@ dos = int(input("ENTER SECOND NUMBER: "))
 tres = int(input("ENTER THIRD NUMBER: "))
 quatro = int(input("ENTER FOURTH NUMBER: "))
 
-if uno > dos and uno > tres and uno > quatro:
-    highest = uno
-
-else:
-    if dos > quatro:
-        highest = dos
-
-    else:
-        if tres > quatro:
-            highest = tres
-
-        else:
-            highest = quatro
-
-print(f"The order of four numbers is: {uno}, {dos}, {tres}, {quatro}.")
+if uno >= dos and uno >= tres and uno >= quatro:
+    if uno >= dos and dos >= tres and tres >= quatro:
+        print(f"The arrangement of the numbers is: {uno}, {dos}, {tres}, {quatro}.")
