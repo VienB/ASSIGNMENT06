@@ -8,12 +8,12 @@ print("VIEN ANGELO BERNALES | BSCOE 1-1 \n")
 
 import random
 
-TotalScore = 10
+print("WELCOME! LET'S TEST YOUR ADDING SKILLS.\n")
+AdditionQuiz = 0
 score = 0
 
-print("WELCOME! LET'S TEST YOUR ADDING SKILLS.\n")
-
-def Quiz():
+while AdditionQuiz != 10:
+    AdditionQuiz = AdditionQuiz + 1
     Fnumber = int(random.randint(0,99))
     Snumber = int(random.randint(0,99))
     print(f"\n{Fnumber} + {Snumber} = ??", end = " ")
@@ -22,21 +22,9 @@ def Quiz():
 
     if answer == YourAnswer:
         print("CONGRATS! YOU ARE CORRECT")
-        score = 1
+        score = score + 1
     else:
         print("ENGKK! THE CORRECT ANSWER IS:", answer)
-        score = 0
-    return score
+        score = score + 0
 
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-YourScore = score + Quiz()
-
-print("\nYOUR TOTAL SCORE IS: " + str(YourScore) + "/10")
+print("\nYOUR TOTAL SCORE IS: " + str(score) + "/10")
