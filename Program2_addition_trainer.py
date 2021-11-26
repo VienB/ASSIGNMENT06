@@ -8,13 +8,35 @@ print("VIEN ANGELO BERNALES | BSCOE 1-1 \n")
 
 import random
 
+TotalScore = 10
 score = 0
-question = 0
 
 print("WELCOME! LET'S TEST YOUR ADDING SKILLS.\n")
 
-Fnumber = random.randint(0,99)
-Snumber = random.randint(0,99)
-operation = ("+")
-answer = Fnumber + Snumber
-print((Fnumber), "+" ,(Snumber), "= ??")
+def Quiz():
+    Fnumber = int(random.randint(0,99))
+    Snumber = int(random.randint(0,99))
+    print(f"\n{Fnumber} + {Snumber} = ??", end = " ")
+    YourAnswer = int(input("\nENTER YOUR ANSWER: "))
+    answer = Fnumber + Snumber
+
+    if answer == YourAnswer:
+        print("CONGRATS! YOU ARE CORRECT")
+        score = 1
+    else:
+        print("ENGKK! THE CORRECT ANSWER IS:", answer)
+        score = 0
+    return score
+
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+YourScore = score + Quiz()
+
+print("\nYOUR TOTAL SCORE IS: " + str(YourScore) + "/10")
